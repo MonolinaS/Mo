@@ -19,7 +19,7 @@
 
 #hom {
   margin-left: 150px;
-  
+
 }
 
 
@@ -339,7 +339,7 @@ article {
   --link-icon-translate: -20px;
   --link-icon-opacity: 0;
   position: relative;
-  border-radius: 16px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: #fff;
   transform-origin: center;
@@ -505,29 +505,32 @@ body {
   text-align: centre;
 }
 
-.profile:hover{
+.profile:hover {
   color: #007bffe1;
 }
 
 
-.sub-head{
+.sub-head {
   text-align: left;
-  color: white; 
+  color: rgb(255, 255, 255);
   padding: 70px;
   margin-top: 5rem;
-  background-color: rgb(99, 0, 181);
-  border: #ffc107;
- }
- .sub-head h1{
-  margin-left: 20px;
- }
- .sub-head p{
-  margin-left: 20px;
- }
- .sub-head hr{
-  color: #ffc107;
-  height: 5px;
-  border-width: 4px;
-  border-color: #ffd000;
-  opacity: 1; 
-margin-left: 20px;}
+  background-color: #7B3E74;
+  border: #eeba2b;
+}
+
+.sub-head h1 {
+    margin-left: 20px;}
+
+.sub-head p {
+    margin-left: 20px;
+  }
+
+.sub-head hr {
+    color: #ffffff;
+    height: 5px;
+    border-width: 4px;
+    border-color:#eeba2b;
+    opacity: 1;
+    margin-left: 20px;
+  }
