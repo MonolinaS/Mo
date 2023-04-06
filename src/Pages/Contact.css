@@ -1,0 +1,25 @@
+.op:hover {
+    background-color: rgb(255, 217, 2) !important;
+    border-radius: 50px !important;
+  }
+  
+  .op {
+    font-family: 'Futura';
+    width: 100px;
+    text-align: center;
+    /* font-weight: 600; */
+  
+  }
+  
+  #name {
+    font-family: 'Futura';
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  #hom {
+    margin-left: 150px;
+  
+  }
+  
+  
