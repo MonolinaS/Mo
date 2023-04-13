@@ -128,7 +128,7 @@
 
 }
 
-#Slills p {
+#Skills p {
   color: black;
   text-align: center;
   font-family: 'Futura';
@@ -137,13 +137,20 @@
 
 
 .skills1 {
-  background-image: url(./images/diversity-5582454_1920.jpg);
+  background-color: #e7e7e7;
+  /* background-size: 100px 100px; */
+  position: relative;
+  top: -4rem;
   border-radius: 0px;
-  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
   object-fit: cover;
   width: 100%;
   height: 300px;
-  opacity: 0.8;
+  /* opacity: 0.8; */
+
 }
 
 
@@ -153,7 +160,7 @@
 }
 
 .mylink:hover {
-  color: #1c74c4;
+  color: #0054a2;
 }
 
 
@@ -257,12 +264,13 @@
 .skill_ui {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   padding: 10px 10px 10px 10px;
   /* margin-left: 10px;
   margin-right: 10px; */
   position: relative;
-  /* margin: -3rem 0 2rem 0rem; */
-  /* margin: 2rem 0rem; */
+  margin: -3rem 0 2rem 0rem;
+  margin: 2rem 0rem;
   border-radius: 0px;
   border-bottom: 5px solid #ffd000;
   width: 100%;
@@ -273,6 +281,7 @@
   margin-top: 100px;
   box-sizing: border-box;
   margin-bottom: 100px;
+  color: black;
 }
 
 
@@ -282,10 +291,10 @@
   border-radius: 25px;
   list-style: none;
   background-color: rgba(255, 255, 255);
-  padding: 10px 20px;
-  margin: 20px 20px;
+  padding: 10px 10px;
+  margin: 10px 10px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.1rem;
   transition: all 0.25s;
   margin-top: 40px;
 
@@ -295,7 +304,7 @@
 .skills_li.active {
   background-color: #ffd000;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 10px 10px;
 
 
   border-width: 1px;
@@ -306,7 +315,7 @@
   padding: 20px 10px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 100px;
@@ -390,7 +399,7 @@ article a {
   align-items: center;
   text-decoration: none;
   font-family: futura;
-  color: #332321;
+  color: #000000;
 }
 
 article a:focus {
@@ -505,32 +514,255 @@ body {
   text-align: centre;
 }
 
+
+.hr_style1 {
+  width: 100%;
+  height: 2px;
+  background-color: #ffd000;
+  margin-bottom: 12px;
+  /* margin-right: auto;
+  margin-left: auto; */
+  margin-top: 4px;
+  border-width: 4px;
+  border-color: #ffd000;
+  opacity: 1;
+  text-align: left;
+}
+
 .profile:hover {
   color: #007bffe1;
 }
 
 
 .sub-head {
-  text-align: left;
-  color: rgb(255, 255, 255);
+  background-color: #e7e7e7;
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
   padding: 70px;
   margin-top: 5rem;
-  background-color: #7B3E74;
-  border: #eeba2b;
+  background-color: #e7e7e7;
+  /* border: #eeba2b; */
+  padding-top: 90px;
+  color: rgb(0, 0, 0);
+  font-family: 'Futura';
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+
+
 }
 
-.sub-head h1 {
-    margin-left: 20px;}
+/* .sub-head h1 {
+  margin-left: 20px;
+} */
 
-.sub-head p {
-    margin-left: 20px;
-  }
+/* .sub-head p {
+  margin-left: 20px;
+} */
 
-.sub-head hr {
-    color: #ffffff;
-    height: 5px;
-    border-width: 4px;
-    border-color:#eeba2b;
-    opacity: 1;
-    margin-left: 20px;
+/* .sub-head hr {
+  color: #ffffff;
+  height: 5px;
+  border-width: 4px;
+  border-color: #eeba2b;
+  opacity: 1;
+  margin-left: 20px;
+} */
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-link {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #000000;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.about {
+  position: relative;
+  width: 100%;
+  margin: -45px 0 45px 0;
+}
+
+.about .col-lg-6 {
+  padding: 0;
+}
+
+.about .section-header {
+  margin-bottom: 30px;
+}
+
+.about .about-img {
+  position: relative;
+  height: 100%;
+}
+
+.about .about-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .about-content {
+  padding: 0 60px;
+}
+
+.about .about-text p {
+  font-size: 16px;
+}
+
+/* .about .skills {
+  margin-bottom: 30px;
+}
+
+.about .skill-name {
+  margin-top: 15px;
+}
+
+.about .skill-name p {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about .skill-name p:last-child {
+  float: right;
+}
+
+.about .progress {
+  height: 10px;
+  border-radius: 10px;
+  background: #dddddd;
+} */
+
+/* .about .progress .progress-bar {
+  width: 0px;
+  background: #EF233C;
+  border-radius: 10px;
+  transition: 2s;
+} */
+/* 
+.about .about-text a.btn {
+  margin-top: 15px;
+} */
+
+@media (max-width: 991.98px) {
+  .about .about-content {
+    padding: 15px 15px 0 15px;
   }
+}
+
+
+.section-header {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.section-header p {
+  display: inline-block;
+  margin: 0 30px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  /* text-transform: uppercase; */
+  background: #ffffff;
+}
+
+.section-header p::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  top: 11px;
+  right: 0;
+  left: -30px;
+  background: #ffd000;
+  z-index: -1;
+}
+
+.section-header p::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  top: 11px;
+  left: 3px;
+  background: #ffd000;
+  z-index: 1;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+    font-size: 30px;
+  }
+}
+
+
+

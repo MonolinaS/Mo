@@ -1,25 +1,231 @@
-.op:hover {
-    background-color: rgb(255, 217, 2) !important;
-    border-radius: 50px !important;
-  }
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #000000;
+  font-size: 0.975em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #000000;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #000000;
+  font-size: 0.975em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #000000;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #000000;
+  font-size: 0.975em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #000000;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #000000;
+  font-size: 0.975em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #000000;
+}
+
+
+
+
+/* on hover placeholder */
+/* 
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.975em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.975em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #ffffff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #ffffff;
+  font-size: 0.975em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #ffffff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #ffffff;
+  font-size: 0.975em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #ffffff;
+} */
+
+/* body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+  color: #b3aca7;
+} */
+
+/* header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+} */
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: futura;
+  font-size: 0.975em;
+  width: 470px;
+  height: 40px;
+  padding: 0px 15px 0px 15px;
+
   
-  .op {
-    font-family: 'Futura';
-    width: 100px;
-    text-align: center;
-    /* font-weight: 600; */
+background: transparent;
+outline: none;
+color: #000000;
+
+border: solid 1px #b3aca7;
+border-bottom: none;
+
+transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+}
+
+
+input:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
   
-  }
+
   
-  #name {
-    font-family: 'Futura';
-    font-weight: 700;
-    font-size: 30px;
-  }
+  background: transparent;
+  outline: none;
   
-  #hom {
-    margin-left: 150px;
+  color: #000000;
+  font-family: futura;
+  font-size: 0.975em;
   
-  }
+  border: solid 1px #b3aca7;
+
   
+transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+background: #ffffff;
+color: #000000;
+}
+
+#submit {
+width: 470px;
+
+padding: 0;
+margin: -5px 0px 0px 0px;
+
+font-family: futura;
+font-size: 0.975em;
+color: #000000;
+
   
+outline:none;
+cursor: pointer;
+
+border: solid 1px #b3aca7;
+border-top: none;
+}
+
+/* 
+#submit:hover {
+  color: #ffffff;
+} */
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+/* body {
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    min-height: 100vh;
+} */
+
+
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
