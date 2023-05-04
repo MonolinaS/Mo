@@ -1,38 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #000000;
   font-size: 0.975em;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
   color: #000000;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #000000;
-  font-size: 0.975em;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #000000;
-}
-
-input::placeholder, textarea::placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   color: #000000;
   font-size: 0.975em;
 }
 
-input:focus::placeholder, textarea::focus:placeholder {
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
   color: #000000;
 }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #000000;
   font-size: 0.975em;
 }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+input:focus::placeholder,
+textarea::focus:placeholder {
+  color: #000000;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: #000000;
+  font-size: 0.975em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
   color: #000000;
 }
 
@@ -104,18 +112,18 @@ input {
   height: 40px;
   padding: 0px 15px 0px 15px;
 
-  
-background: transparent;
-outline: none;
-color: #000000;
 
-border: solid 1px #b3aca7;
-border-bottom: none;
+  background: transparent;
+  outline: none;
+  color: #000000;
 
-transition: all 0.3s ease-in-out;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
 
 
@@ -130,52 +138,72 @@ textarea {
   height: 110px;
   max-height: 110px;
   padding: 15px;
-  
 
-  
+
+
   background: transparent;
   outline: none;
-  
+
   color: #000000;
   font-family: futura;
   font-size: 0.975em;
-  
+
   border: solid 1px #b3aca7;
 
-  
-transition: all 0.3s ease-in-out;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
 
 textarea:hover {
-background: #ffffff;
-color: #000000;
+  background: #ffffff;
+  color: #000000;
 }
 
 #submit {
-width: 470px;
+  width: 470px;
+  background-color: #ffd000;
 
-padding: 0;
-margin: -5px 0px 0px 0px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
 
-font-family: futura;
-font-size: 0.975em;
-color: #000000;
+  font-family: futura;
+  font-size: 0.975em;
+  color: #000000;
 
-  
-outline:none;
-cursor: pointer;
 
-border: solid 1px #b3aca7;
-border-top: none;
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
 }
 
-/* 
+
 #submit:hover {
-  color: #ffffff;
-} */
+  background-color: #ffffff;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
 
 
 /*
@@ -192,7 +220,7 @@ border-top: none;
     min-height: 100vh;
 } */
 
-
+/* 
 
 .social-link {
   width: 30px;
@@ -218,7 +246,7 @@ border-top: none;
   width: 50%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
-}
+/* } */
 
 /* Clear floats after the columns */
 .row:after {
@@ -226,6 +254,109 @@ border-top: none;
   display: table;
   clear: both;
 }
+
 * {
   box-sizing: border-box;
 }
+
+.example {
+  position: relative;
+}
+
+.example p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  font-family: Quicksand, sans-serif;
+}
+
+.example img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+
+
+
+
+}
+
+
+.banner {
+  padding: 6em 0 8em 0;
+  text-align: center;
+  width: 100%;
+  background-color: #dadada;
+  /* background-image: url(http://illusion.scene360.com/wp-content/uploads/2015/01/wes-anderson-12.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border1 {
+  width: 60%;
+  margin: 0 auto;
+  height: 47px;
+  border-top:    3px solid rgb(255, 255, 255);
+  border-right:  3px solid rgb(255, 255, 255); 
+  border-left: 3px solid rgb(255, 255, 255);
+
+}
+
+.bot1 {
+ 
+  width: 60%;
+  margin: 0 auto;
+  height: 47px;
+  border-bottom:    3px  solid rgb(255, 255, 255);
+  border-right:  3px solid rgb(255, 255, 255); 
+  border-left: 3px  solid rgb(255, 255, 255);
+
+
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.5em; */
+  padding: 0.5em 0 0 0;
+}
+
+.banner p {
+  color: #000000;
+  font-size: 1em;
+  /* font-weight: bold; */
+  margin: 1em 0 0 0;
+  line-height: 2em;
+  /* letter-spacing: 2px; */
+  padding: 0 0 2em 0;
+}
+/* .carousel-item {
+ 
+}
+.carousel-item img {
+  max-width: 100%;
+} */
