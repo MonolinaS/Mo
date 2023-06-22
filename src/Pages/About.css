@@ -358,6 +358,8 @@ hr{
     margin:1.25rem;
     padding:0.3125rem;
     /*border:2px solid #FFFFFF;*/
+    margin-left: -45px;
+    margin-right: -45px;
 }
 .card{
     flex:1 0 12.5rem;
@@ -374,7 +376,7 @@ hr{
     /*border:2px solid #FFFFFF;*/
 }
 .card-image:hover{
-    transform:scale(1.10);
+    transform:scale(1.05);
     filter:grayscale(0%);
 }
 .card-image.card-1{
@@ -395,3 +397,72 @@ hr{
 .card-image.card-6{
     background-image:url(https://images.unsplash.com/photo-1570299135572-3a10aa26de2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=463&q=80);
 }
+#share {
+	width:100%;
+	border:1px solid #eaeaea;
+	/* margin: 10 auto; */
+	background: none;
+	text-align:center;
+/* font-family: verdana; */
+}
+/* .like {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+} */
+.push {
+	display: inline-block;
+	width: 10.2%;
+	min-width: 100px;
+	line-height: 40px;
+	margin: 5px 2px 20px 2px;
+	font-size: 15px;
+	text-align: center;
+	color:#fff;
+	cursor: pointer;
+}
+ 
+.facebook {background-color:#3b5998;}
+.facebook:hover {background-color:#2d4373; color:#fff;}
+.google {background-color:#dd4b39;}
+.google:hover {background-color:#c23321; color:#fff;}
+.twitter {background-color:#55acee;}
+.twitter:hover {background-color:#2795e9; color:#fff;}
+.vkontakte {background-color:#587ea3;}
+.vkontakte:hover {background-color:#466482; color:#fff;}
+.ok {background-color:#ee8208;}
+.ok:hover {background-color:#ee7808; color:#fff;}
+
+
+.hr-lines{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .hr-lines:before{
+    content:" ";
+    height: 2px;
+    width: 190px;
+    background: #000000;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  
+  .hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 190px;
+    background: #000000;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+ 
+  
+ 
