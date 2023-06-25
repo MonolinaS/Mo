@@ -360,3 +360,13 @@ textarea:hover {
 .carousel-item img {
   max-width: 100%;
 } */
+
+
+
+.topBefore {margin-bottom: 200px; }
+
+.form-control me-2 {box-shadow: none; border-color: black; font-family:'Futura';}
+.rounded-circle {padding-top: -10px;}
+.display-4{color: black; text-align: left; margin-left:5rem; font-size: xx-large; font-weight: 600; padding-top: 100px; }
+.h-primary hp {color: black;  font-weight: 600; padding-top: 17px; }
+        
