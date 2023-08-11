@@ -1,0 +1,274 @@
+
+
+
+
+.nav1-wrapper {
+	background: url("http://thumb1.shutterstock.com/display_pic_with_logo/1487123/134611310/stock-vector-colorful-geometric-background-with-triangles-vector-eps-134611310.jpg");
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.nav1-wrapper ul {
+	list-style: none;
+}
+
+.nav1-wrapper li {
+	display: inline-block;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+}
+
+.nav1-wrapper li:hover {
+	background: #ffd000;
+	color: black;
+}
+
+.content {
+	padding-top: 90px;
+}
+
+.anchor {
+	display: block;
+	/*this is important!*/
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+body{
+  height:100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.row{
+  height:100%;
+  margin:auto;
+}
+.left-heading{
+  font-weight:700;
+  color:#273342;
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.left-paragraph{
+  color:gray;
+  padding-left:10px;
+  margin-top:20px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.left-column{
+  background-color:#fff;
+  float: left;
+  width: 50%;
+  padding: 25px;
+  align-items:center;
+  vertical-align:center;
+  height: 100%; /* Should be removed. Only for demonstration */
+  padding-top: 15%;
+}
+/* Create two equal columns that floats next to each other */
+.right-column {
+  background-image:url('https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80');
+  object-fit:cover;
+  background-position:50% 50%;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  align-items:center;
+  vertical-align:center;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn {
+  width:200px;
+  padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  margin-top:20px;
+  margin-left:10px;
+  border-radius: 0.375rem;
+  border:none;
+}
+.success {
+  background-color: rgb(79 70 229);
+  color: white; 
+  box-shadow: 2px 4px 6px 8px rgb(79 70 229/0.10);
+  margin-right:20px;
+}
+
+.info {background-color: #fff;color: rgb(79 70 229);box-shadow: 2px 4px 6px 8px #dddddd40;}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .left-column{
+    width: 100%;
+    height:auto;
+  }
+  .right-column {
+    width:97%;
+    margin:0 20px 0 10px;
+    border-radius:20px;
+  }
+  .success {
+  background-color: rgb(79 70 229);
+  color: white; 
+  box-shadow: 2px 4px 6px 8px rgb(79 70 229/0.10);
+  margin-right:2px;
+}
+  .btn {
+  width:150px;
+  padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+}
+
+
+/* 
+.faq-heading {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+  } */
+  
+  .faq-card {
+    border-bottom: 1px solid #dce0e8;
+    border-radius: 6px;
+    padding: 24px 20px;
+    margin-bottom: 12px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+  
+  }
+  
+  /* .faq-open-icon {
+    font-size: 2em;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-weight: 700;
+  } */
+  
+  /* details[open] .faq-open-icon {
+    top: 18px;
+    right: 24px;
+  }
+   */
+  /* details > summary {
+    list-style: none;
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
+  } */
+  
+  /* details[open] summary {
+    color: #0186ff;
+    font-weight: 500;
+  } */
+  
+  /* details[open] .faq-card-spoiler {
+    display: inline-block;
+    padding-top: 8px;
+    color: #8b8b9a;
+  } */
+  
+  /* .faq-aftertext {
+    text-align: center;
+    color: #8b8b9a;
+  }
+ */
+
+  
+
+  details > summary {
+	padding: 8px;
+	padding-left: 2.2rem;
+	border: none;
+	cursor: pointer;
+	list-style-position: inside;
+	/* border-bottom: 2px solid darkblue; */
+	position: relative;
+	display: block;
+	transition: all 1s;
+	font-family: var(--font1);
+  }
+  
+  details[open] > summary {
+	color: rgb(255, 255, 255);
+	background-color: darkblue;
+	/* border-bottom: 2px solid skyblue; */
+	cursor: pointer;
+  }
+  
+
+
+
+
+  details > summary {
+	padding: 8px;
+	padding-left: 2.2rem;
+	border: none;
+	cursor: pointer;
+	list-style-position: inside;
+	/* border-bottom: 2px solid darkblue; */
+	position: relative;
+	display: block;
+	transition: all 1s;
+	font-family: var(--font1);
+  }
+  
+  details[open] > summary {
+	color: rgb(255, 255, 255);
+	background-color: darkblue;
+	border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  
+  details > p {
+	padding: 8px;
+	border-bottom: 2px solid skyblue;
+	line-height: 2rem;
+	font-family: var(--font2);
+  }
+  
+  summary:before {
+	content: "";
+	border-width: 0.4rem;
+	border-style: solid;
+	border-color: transparent transparent transparent darkblue;
+	position: absolute;
+	top: 0.6rem;
+	left: 1rem;
+	transform: rotate(0);
+	transform-origin: 0.2rem 50%;
+	transition: 0.25s transform ease;
+  }
+  
+  details summary::-webkit-details-marker {
+	display: none;
+  }
+  
+  details[open] > summary:before {
+	transform: rotate(90deg);
+	border-color: transparent transparent transparent rgb(255, 255, 255);
+  }
+  
+  

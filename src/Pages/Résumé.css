@@ -14,23 +14,8 @@ body {
     background-color: #fff;
 } */
 
-.CV-page {
-  max-width: 700px;
-  margin: 100px;
-  padding: 2em;
-  color: #222222;
-  font-size: 1em;
-  font-family: futura;
-}
 
 
-@media all and (max-width: 500px) {
-  .CV-page {
-    padding: 0 1em;
-    margin-left: 200px;
-
-  }
-}
 
 /* if IE<=7 */
 
@@ -423,7 +408,7 @@ hr {
 }
 
 .container {
-  max-width: 670px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -522,6 +507,7 @@ details[open] .faq-card-spoiler {
   border-color: #ffd000;
   border-width: 1px;
 }
+
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -534,3 +520,7 @@ details[open] .faq-card-spoiler {
   text-align: center;
   color: #000000;
 }
+
+
+
+
