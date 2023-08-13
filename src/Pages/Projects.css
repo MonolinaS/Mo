@@ -646,7 +646,7 @@ button {
 
 
 h1 {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 400;
     text-align: center;
 }
@@ -768,3 +768,16 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
 }
+
+
+.process { --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 0px;
+  
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;}
