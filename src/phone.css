@@ -38,3 +38,17 @@
 
 
 }
+
+
+.footer-title {
+    /* border-bottom: 2px solid #ffffff; */
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    padding-top: 58px;
+    margin-left: 43px;}
+
+
+
+    #ul-article{
+        padding-bottom:0px; padding-left: 0px; padding-right:0px; width: 90%; margin-right: 19px;  position: relative; top: -6rem;
+    }
