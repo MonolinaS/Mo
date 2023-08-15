@@ -738,3 +738,143 @@ section {
         font-size: 6rem;
       }
     }
+
+
+
+
+
+
+
+
+
+
+    @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,700i|Roboto:300");
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+article {
+  border-top: 35px solid #2589BD;
+  width: 760px;
+  max-width: 90vw;
+  position: relative;
+  top: 60px;
+  padding: 24px;
+  background-color: #fff;
+ margin-bottom: 200px;
+
+hr {
+  opacity: 0.25;
+}
+
+h3 {
+  color: #2589BD;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 8px;
+  color: #8e8e8e;
+}
+
+img {
+  max-width: 100%;
+  transform: scale(1);
+}
+
+.det {
+  margin: 8px 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #8e8e8e;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 6px;
+  color: #2589BD;
+}
+
+.date {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #6f6f6f;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  text-shadow: 1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  box-shadow: inset 0 -2px 0 orange;
+}
+
+.entity.available {
+  box-shadow: inset 0 -2px 0 #6f6f6f;
+}
+.entity.listed {
+  box-shadow: inset 0 -2px 0 #007AFF;
+}
+.entity.linked {
+  text-shadow: none;
+  color: #fff;
+  padding: 2px 3px;
+  border-radius: 2px;
+  box-shadow: inset 0 -24px 0 #2E92FF;
+}
+.entity.linked::after {
+  content: "";
+  font-family: FontAwesome;
+  text-shadow: none;
+  margin-left: 8px;
+  margin-right: 6px;
+  font-size: 12px;
+  line-height: 10px;
+}
+.entity.not-linked {
+  text-shadow: none;
+  color: #fff;
+  padding: 2px 3px;
+  border-radius: 2px;
+  box-shadow: inset 0 -24px 0 #2E92FF;
+}
+.entity.not-linked::after {
+  content: "";
+  font-family: FontAwesome;
+  text-shadow: none;
+  margin-left: 8px;
+  margin-right: 6px;
+  font-size: 12px;
+  line-height: 10px;
+  opacity: 0.5;
+}
+
+
+
+
+.footer-btn:hover {
+  background-color: #ffffff;
+}

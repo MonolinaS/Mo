@@ -5,7 +5,6 @@
     padding: 0px 10px;
 }
 
-
 #home{
     height: 370px;
     padding: 3px 28px;
@@ -19,4 +18,23 @@
 
 .image{
     display: none; 
+}
+#lower-second{
+    text-align-last: center;
+}
+.footer-bottom p{
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+#footer-btn{
+    align-items: center;; border-radius: 0px;padding: 10px; background-color: #ffd000;margin-top: 16px; color: #000; font-family: 'Times New Roman', Times, serif; border-color: #ffd000; width: 60%;
+}
+#hide-it{
+    display: none;
+}
+
+#explore{align-items: center;; border-radius: 0px;padding: 10px; background-color: #ffd000;margin-top: 16px; color: #000; font-family: 'Times New Roman', Times, serif; border-color: #ffd000; width: 60%;
+
+
 }
