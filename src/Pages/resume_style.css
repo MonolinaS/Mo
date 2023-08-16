@@ -18,6 +18,7 @@
   }
   
   .resume {
+    margin-left:20em;
     font-size: var(--base-font-size);
     /* font-family: Roboto, sans-serif; */
     padding: var(--vertical-padding) var(--horizontal-padding);
@@ -26,7 +27,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 40px;
     justify-content: center;
     gap: var(--section-gap);
     max-width: var(--page-width);
@@ -163,8 +163,9 @@
     align-self: center;
   }
 
-
-
+  #download-cv{
+    margin-left: 540px; align-items: center;; border-radius: 0px;padding: 10px; background-color: #ffd000;margin-top: 16px; color: #000; font-family: 'Times New Roman', Times, serif; border-color: #ffd000; width: 20%;
+  }
 
 
 

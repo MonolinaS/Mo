@@ -38,3 +38,10 @@
 
 
 }
+.resume{
+    margin-left: 0em;
+}
+
+#download-cv{
+    margin-left: 7em; align-items: center;; border-radius: 0px;padding: 10px; background-color: #ffd000;margin-top: 16px; color: #000; font-family: 'Times New Roman', Times, serif; border-color: #ffd000; width: 40%;
+  }
