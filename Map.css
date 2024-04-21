@@ -1,0 +1,16 @@
+article {
+  border-top: 35px solid #2589BD;
+  width: 760px;
+  max-width: 90vw;
+  position: relative;
+  top: 60px;
+  padding: 24px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 200px;}
+
+
+  hr {
+    opacity: 0.25;
+  }
+

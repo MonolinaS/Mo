@@ -1,0 +1,33 @@
+.cover-content {
+    border-top: 100px;
+    min-height: 0vh;
+}
+.contact-icon{
+    padding-top: 4rem; 
+    padding-right: 0rem;
+  }
+.contact-head{
+    padding-top: 0px;
+}
+input,textarea,#submit{
+    width: 322px;
+}
+#form{
+    margin: 0px;
+}
+.topBefore{
+    margin-bottom: 0px;
+}
+.holding{
+        width: -webkit-fill-available;
+}
+.acc{
+    float: none;
+}
+.copyright{
+    float: none;
+  }
+  #hom{
+    margin-left: 0px;
+  }
+  
